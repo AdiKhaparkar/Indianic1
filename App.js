@@ -13,7 +13,7 @@ class App extends Component {
         <Text style={styles.Login}>Login Form</Text>
         <TextInput placeholder="Eg:- 1234@gmail.com" style={styles.placeholder}>Email</TextInput>
         <TextInput placeholder=" Enter Password " style={styles.placeholder}>Password</TextInput>
-        <Text style={{textAlign:"center"}}>Forgot Password?</Text>
+        <Text style={{textAlign:"center"}}>Reset Password?</Text>
         <Text>{'\n'}</Text>
         <Button title="Login"> </Button>
         <Text>{'\n'}</Text>
@@ -26,7 +26,7 @@ class App extends Component {
           </View>
           <Button title="Google"/>
         </View>
-        <Text >Dont have the account? Click Here </Text>
+        <Text >Dont have the account?</Text>
         </View>
     )
   }
