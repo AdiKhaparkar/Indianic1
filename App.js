@@ -15,7 +15,7 @@ class App extends Component {
         <TextInput placeholder=" Enter Password " style={styles.placeholder}>Password</TextInput>
         <Text style={{textAlign:"center"}}>Reset Password?</Text>
         <Text>{'\n'}</Text>
-        <Button title="Login"> </Button>
+        {/* <Button title="Login"> </Button> */}
         <Text>{'\n'}</Text>
         <Text style={{textAlign:"center"}}>-----------------------------------------OR-----------------------------------------</Text>
         <Text style={styles.continuewith}>Continue with</Text>
