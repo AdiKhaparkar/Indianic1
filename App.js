@@ -17,25 +17,24 @@ class App extends Component {
         <TextInput placeholder=" Enter Password " style={styles.placeholder}>Password</TextInput>
         <Text style={{textAlign:"center"}}>Reset Password?</Text>
         <Text>{'\n'}</Text>
-        {/* <Button title="Login"> </Button> */}
+        <Button title="Login"> </Button>
         <Text>{'\n'}</Text>
         <Text style={{textAlign:"center"}}>-----------------------------------------OR-----------------------------------------</Text>
         <Text style={styles.continuewith}>Continue with</Text>
         <Text>{'\n'}</Text>
         <View style={{flexDirection:'row'}}>
           <View style={{paddingRight:50}}>
-            <Button title="Facebook" source={require('./AssetImage/facebook.svg')}/>
-            
-
+            <Image source={require("./AssetImage/Facebook.png")} style={styles.button}/>
             {/* <FontAwesomeIcon icon="fa-thin fa-f"/> */}
-
-
           </View>
-          <Button title="Google"/>
+          <View>
+            <Image source={require("./AssetImage/Google.png")} style={styles.button}/>
+          </View>
+          
         </View>
         <Text>{'\n'}</Text>
         <Text>Dont have the account? Create Now</Text>
-        {/* </Register> */}
+        {/* </Register> Register page linking failed here need to learn more  */}
         </View>
     )
   }
@@ -43,8 +42,9 @@ class App extends Component {
 const styles = StyleSheet.create({
   Login:{textAlign:"center",fontSize:25, color:"black"},
   image:{width:150, height:150},
-  placeholder:{margin:12, width:350 ,borderRadius:5, borderWidth:2 ,height:35 ,borderRadius:5},
-  continuewith:{textAlign:"center", fontSize:20, backgroundColor:"grey", borderBottomColor:"maroon",borderBottomWidth:2, borderRadius:5}
+  button:{width:150,height:40, display:"flex"},
+  placeholder:{margin:12, width:350 ,borderRadius:5, borderWidth:2 ,height:35 ,borderRadius:5, borderLeftColor:"white", borderRightColor:"white",borderTopColor:"white"},
+  continuewith:{textAlign:"center", fontSize:20, backgroundColor:"grey", borderBottomColor:"maroon",borderBottomWidth:2, borderRadius:5,  borderLeftColor:"white", borderRightColor:"white",borderTopColor:"white"}
 })
 
 export default App;
